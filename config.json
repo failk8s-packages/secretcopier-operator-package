@@ -1,9 +1,9 @@
 {
     "registry": "quay.io/failk8s",
     "package": {
-        "name": "<PACKAGE-NAME>",
+        "name": "secretcopier-operator",
         "domain": "tkgdev.failk8s.com",
-        "displayName": "<DISPLAY NAME>",
-        "version": "<VERSION>"
+        "displayName": "Failk8s Secret Copier and PullImage Config Operator",
+        "version": "1.0.0"
     }
 }

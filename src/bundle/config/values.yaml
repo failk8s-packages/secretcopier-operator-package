@@ -1,3 +1,8 @@
 #@data/values
 ---
-#! Add your values here
+#! The namespace in which to deploy SecretCopier Operator
+namespace: failk8s-operator
+wildcard:
+  create: True
+  name: wildcard
+  namespace: REPLACE_ME
