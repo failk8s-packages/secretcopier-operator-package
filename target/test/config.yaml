@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Secret
 metadata:
-  name: secretcopier-operator-config
+  name: secretcopier-operator
   namespace: secretcopier-operator-package
 stringData:
   values.yml: null
