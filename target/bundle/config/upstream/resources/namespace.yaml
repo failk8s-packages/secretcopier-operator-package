@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: secretcopier-operator-package
+  name: failk8s-operator
