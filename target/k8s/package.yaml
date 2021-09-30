@@ -1,27 +1,16 @@
----
 apiVersion: data.packaging.carvel.dev/v1alpha1
 kind: Package
 metadata:
-  annotations:
-    kbld.k14s.io/images: |
-      - origins:
-        - resolved:
-            tag: 1.0.0
-            url: quay.io/failk8s/secretcopier-operator-package:1.0.0
-        url: quay.io/failk8s/secretcopier-operator-package@sha256:63de4fdb9a8e1845838283efabb5fd99551a0f31f62e517b04ef606e34838cd2
-  name: secretcopier-operator.dev.failk8s.com.1.0.0
+  name: secretcopier-operator.dev.failk8s.com.0.0.0+develop
   namespace: kapp-controller-packaging-global
 spec:
   refName: secretcopier-operator.dev.failk8s.com
+  version: 0.0.0+develop
   template:
     spec:
-      deploy:
-      - kapp:
-          rawOptions:
-          - --wait-timeout=5m
       fetch:
       - imgpkgBundle:
-          image: quay.io/failk8s/secretcopier-operator-package@sha256:63de4fdb9a8e1845838283efabb5fd99551a0f31f62e517b04ef606e34838cd2
+          image: quay.io/failk8s/secretcopier-operator-package:develop
       template:
       - ytt:
           paths:
@@ -30,4 +19,7 @@ spec:
           paths:
           - '-'
           - .imgpkg/images.yml
-  version: 1.0.0
+      deploy:
+      - kapp:
+          rawOptions:
+          - --wait-timeout=5m

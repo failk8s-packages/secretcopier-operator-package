@@ -4,7 +4,7 @@
         "name": "secretcopier-operator",
         "domain": "dev.failk8s.com",
         "displayName": "Failk8s Secret Copier and PullImage Config Operator",
-        "version": "1.0.0"
+        "version": "develop"
     },
     "packages": []
 }
