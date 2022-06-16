@@ -2,6 +2,5 @@ apiVersion: data.packaging.carvel.dev/v1alpha1
 kind: PackageMetadata
 metadata:
   name: secretcopier-operator.dev.failk8s.com
-  namespace: kapp-controller-packaging-global
 spec:
   displayName: Failk8s Secret Copier and PullImage Config Operator
